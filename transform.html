@@ -5,6 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .container,
+      .inner {
+        width: 150px;
+        height: 150px;
+        border: 1px solid red;
+      }
+      .container {
+        background-color: salmon;
+      }
+      .inner {
+        background-color: seagreen;
+        /* transform: scale(0.5); */
+        /* transform: rotate(30deg); */
+        transform: scale(0.5) rotate(45deg) translate(50px, 50px);
+      }
+      /* Note: Shorthand used for translate for X-Axis & Y-Axis */
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h1>Transformer I am coming</h1>
+    <div class="box container">
+      <div class="inner">Box-1</div>
+    </div>
+    <div class="box container">
+      <div class="inner">Box-2</div>
+    </div>
+    <div class="box container">
+      <div class="inner">Box-3</div>
+    </div>
+  </body>
 </html>
